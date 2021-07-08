@@ -1,0 +1,87 @@
+/*
+
+Brandon Holmes, Section 2, 500751878
+Nya Samahan, Section 2, 500634913
+Rafael Natividad, Section 3, 500705909
+
+*/
+
+/********************
+        Queries 
+********************/
+
+?- do([put, a, green, wedge, on, the, table], [], S), do([put, a, pyramid, on, a, blue, block], S, Snext).
+S = [clear(b08, S), locatedOn(b09, area3, S)],
+Snext = [locatedOn(b09, area3, Snext), clear(b01, Snext), locatedOn(b02, b08, Snext)] .
+
+?- do([put, a, green, wedge, on, the, table], [], S), what([a, wedge, on, the, table], B, S).
+S = [clear(b08, S), locatedOn(b09, area3, S)],
+B = b07 .
+
+?- do([put, a, green, wedge, on, the, table], [], S), do([put, any, pyramid, on, a, blue, cube], S, Snext), what([a, pyramid, on, a, blue, block], B, Snext).
+S = [clear(b08, S), locatedOn(b09, area3, S)],
+Snext = [locatedOn(b09, area3, Snext), clear(b01, Snext), locatedOn(b02, b08, Snext)],
+B = b02 ;
+S = [clear(b08, S), locatedOn(b09, area3, S)],
+Snext = [locatedOn(b09, area3, Snext), clear(b05, Snext), locatedOn(b06, b08, Snext)],
+B = b06 ;
+S = [clear(b08, S), locatedOn(b09, area3, S)],
+Snext = [locatedOn(b09, area3, Snext), clear(b11, Snext), locatedOn(b12, b08, Snext)],
+B = b12 .
+
+?- do([put, a, green, wedge, on, the, table], [], S), do([put, any, red, pyramid, on, a, blue, cube], S, Snext), what([a, pyramid, above, a, blue, block], B, Snext).
+S = [clear(b08, S), locatedOn(b09, area3, S)],
+Snext = [locatedOn(b09, area3, Snext), clear(b11, Snext), locatedOn(b12, b08, Snext)],
+B = b12 .
+
+?- do([put, any, pyramid, on, a, block], [], S).
+false.
+
+?- what([any, pyramid, on, a, block], B, []).
+B = b02 ;
+B = b06 ;
+B = b12 ;
+false.
+
+?- what([any, pyramid, on, a, block], B, [putOn(b12, table)]).
+B = b02 ;
+B = b06 ;
+B = b02 ;
+B = b06 ;
+false.
+
+?- do([put, a, pyramid, on, the, table], [], S), do([put, any, blue, block, on, a, big, cube], S, Snext).
+S = [clear(b01, S), locatedOn(b02, area3, S)],
+Snext = [locatedOn(b02, area3, Snext), clear(b05, Snext), locatedOn(b06, b01, Snext)] ;
+S = [clear(b01, S), locatedOn(b02, area3, S)],
+Snext = [locatedOn(b02, area3, Snext), clear(area4, Snext), locatedOn(b07, b01, Snext)] .
+
+?- do([put, any, block, on, a, block], [], S).
+false.
+
+?- do([put, any, block, on, the, table], [], S).
+S = [clear(b01, S), locatedOn(b02, area3, S)] ;
+S = [clear(b01, S), locatedOn(b02, area3, S)] ;
+S = [clear(b01, S), locatedOn(b02, area3, S)] ;
+S = [clear(b01, S), locatedOn(b02, area3, S)] ;
+S = [clear(b05, S), locatedOn(b06, area3, S)] ;
+S = [clear(b05, S), locatedOn(b06, area3, S)] ;
+S = [clear(b05, S), locatedOn(b06, area3, S)] ;
+S = [clear(b05, S), locatedOn(b06, area3, S)] ;
+S = [clear(area4, S), locatedOn(b07, area3, S)] ;
+S = [clear(area4, S), locatedOn(b07, area3, S)] ;
+S = [clear(area4, S), locatedOn(b07, area3, S)] ;
+S = [clear(area4, S), locatedOn(b07, area3, S)] ;
+S = [clear(area4, S), locatedOn(b07, area3, S)] ;
+S = [clear(area4, S), locatedOn(b07, area3, S)] ;
+S = [clear(area4, S), locatedOn(b07, area3, S)] ;
+S = [clear(area4, S), locatedOn(b07, area3, S)] ;
+S = [clear(b08, S), locatedOn(b09, area3, S)] ;
+S = [clear(b08, S), locatedOn(b09, area3, S)] ;
+S = [clear(b08, S), locatedOn(b09, area3, S)] ;
+S = [clear(b08, S), locatedOn(b09, area3, S)] ;
+S = [clear(b11, S), locatedOn(b12, area3, S)] ;
+S = [clear(b11, S), locatedOn(b12, area3, S)] ;
+S = [clear(b11, S), locatedOn(b12, area3, S)] ;
+S = [clear(b11, S), locatedOn(b12, area3, S)] ;
+false.

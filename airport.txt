@@ -1,0 +1,120 @@
+/*  
+
+Brandon Holmes, Section 2, 500751878
+Nya Samahan, Section 2, 500634913
+Rafael Natividad, Section 3, 500705909
+
+*/
+
+/* upper bound 10 */
+
+?- solve_problem(10,L).
+
+Elapsed time (sec): 0.6966380000000001
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), move(boeing347, medium, v2, seg(v8, v2), seg(v2, v7), v7), move(boeing347, medium, v8, seg(v0, v8), seg(v8, v2), v2), startup(boeing347), pushback(boeing347, medium, v0, seg(v8, v0), seg(v0, v8), v8)] ;
+
+Elapsed time (sec): 0.91391
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), move(boeing347, medium, v2, seg(v8, v2), seg(v2, v7), v7), startup(boeing347), pushback(boeing347, medium, v8, seg(v2, v8), seg(v8, v2), v2), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8)] ;
+
+Elapsed time (sec): 1.0410150000000002
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), move(boeing347, medium, v2, seg(v9, v2), seg(v2, v7), v7), startup(boeing347), pushback(boeing347, medium, v8, seg(v2, v8), seg(v9, v2), v2), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8)] ;
+
+Elapsed time (sec): 1.1588390000000004
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), startup(boeing347), pushback(boeing347, medium, v2, seg(v7, v2), seg(v2, v7), v7), pushback(boeing347, medium, v8, seg(v2, v8), seg(v7, v2), v2), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8)] ;
+
+Elapsed time (sec): 1.2428700000000004
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), startup(boeing347), pushback(boeing347, medium, v7, seg(v5, v7), seg(v7, v5), v5), pushback(boeing347, medium, v2, seg(v7, v2), seg(v5, v7), v7), pushback(boeing347, medium, v8, seg(v2, v8), seg(v7, v2), v2), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8)] ;
+
+Elapsed time (sec): 1.305593
+L = [takeoff(boeing347, seg(v5, v4), v4), startup(boeing347), pushback(boeing347, medium, v5, seg(v4, v5), seg(v5, v4), v4), pushback(boeing347, medium, v7, seg(v5, v7), seg(v4, v5), v5), pushback(boeing347, medium, v2, seg(v7, v2), seg(v5, v7), v7), pushback(boeing347, medium, v8, seg(v2, v8), seg(v7, v2), v2), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8)] ;
+
+Elapsed time (sec): 1.401612
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), move(boeing347, medium, v2, seg(v6, v2), seg(v2, v7), v7), startup(boeing347), pushback(boeing347, medium, v8, seg(v2, v8), seg(v6, v2), v2), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8)] ;
+
+Elapsed time (sec): 2.1735930000000003
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), move(boeing347, medium, v2, seg(v8, v2), seg(v2, v7), v7), move(boeing347, medium, v8, seg(v0, v8), seg(v8, v2), v2), startup(boeing347), pushback(boeing347, medium, v0, seg(v8, v0), seg(v0, v8), v8), move(md25, light, v3, seg(..., ...), seg(..., ...), v6)] ;
+
+Elapsed time (sec): 2.4383410000000003
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), move(boeing347, medium, v2, seg(v8, v2), seg(v2, v7), v7), startup(boeing347), pushback(boeing347, medium, v8, seg(v2, v8), seg(v8, v2), v2), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8), move(md25, light, v3, seg(..., ...), seg(..., ...), v6)] ;
+
+Elapsed time (sec): 2.5703580000000006
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), move(boeing347, medium, v2, seg(v9, v2), seg(v2, v7), v7), startup(boeing347), pushback(boeing347, medium, v8, seg(v2, v8), seg(v9, v2), v2), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8), move(md25, light, v3, seg(..., ...), seg(..., ...), v6)] ;
+
+Elapsed time (sec): 2.7151639999999997
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), startup(boeing347), pushback(boeing347, medium, v2, seg(v7, v2), seg(v2, v7), v7), pushback(boeing347, medium, v8, seg(v2, v8), seg(v7, v2), v2), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8), move(md25, light, v3, seg(..., ...), seg(..., ...), v6)] .
+
+
+
+/* SECOND GOAL */
+
+?- solve_problem(10,L).
+
+Elapsed time (sec): 0.010930000000000106
+L = [park(md25, light, seg(v9, v1), v1), move(md25, light, v9, seg(v2, v9), seg(v9, v1), v1), move(md25, light, v2, seg(v6, v2), seg(v2, v9), v9), move(md25, light, v6, seg(v3, v6), seg(v6, v2), v2), move(md25, light, v3, seg(v4, v3), seg(v3, v6), v6)] ;
+
+Elapsed time (sec): 0.15124300000000002
+L = [park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v0, seg(v8, v0), seg(v0, v8), v8), move(md25, light, v9, seg(v2, v9), seg(v9, v1), v1), move(md25, light, v2, seg(v6, v2), seg(v2, v9), v9), move(md25, light, v6, seg(v3, v6), seg(v6, v2), v2), move(md25, light, v3, seg(v4, v3), seg(v3, v6), v6)] ;
+
+Elapsed time (sec): 0.2019650000000004
+L = [park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8), move(md25, light, v9, seg(v2, v9), seg(v9, v1), v1), move(md25, light, v2, seg(v6, v2), seg(v2, v9), v9), move(md25, light, v6, seg(v3, v6), seg(v6, v2), v2), move(md25, light, v3, seg(v4, v3), seg(v3, v6), v6)] ;
+
+Elapsed time (sec): 0.22126900000000038
+L = [pushback(md25, light, v1, seg(v9, v1), seg(v1, v9), v9), park(md25, light, seg(v9, v1), v1), move(md25, light, v9, seg(v2, v9), seg(v9, v1), v1), move(md25, light, v2, seg(v6, v2), seg(v2, v9), v9), move(md25, light, v6, seg(v3, v6), seg(v6, v2), v2), move(md25, light, v3, seg(v4, v3), seg(v3, v6), v6)] ;
+
+Elapsed time (sec): 0.24438100000000063
+L = [pushback(md25, light, v1, seg(v9, v1), seg(v2, v9), v9), park(md25, light, seg(v9, v1), v1), move(md25, light, v9, seg(v2, v9), seg(v9, v1), v1), move(md25, light, v2, seg(v6, v2), seg(v2, v9), v9), move(md25, light, v6, seg(v3, v6), seg(v6, v2), v2), move(md25, light, v3, seg(v4, v3), seg(v3, v6), v6)] ;
+
+Elapsed time (sec): 0.2662520000000006
+L = [park(md25, light, seg(v9, v1), v1), move(md25, light, v9, seg(v2, v9), seg(v9, v1), v1), pushback(boeing347, medium, v0, seg(v8, v0), seg(v0, v8), v8), move(md25, light, v2, seg(v6, v2), seg(v2, v9), v9), move(md25, light, v6, seg(v3, v6), seg(v6, v2), v2), move(md25, light, v3, seg(v4, v3), seg(v3, v6), v6)] ;
+
+Elapsed time (sec): 0.29238500000000034
+L = [park(md25, light, seg(v9, v1), v1), move(md25, light, v9, seg(v2, v9), seg(v9, v1), v1), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8), move(md25, light, v2, seg(v6, v2), seg(v2, v9), v9), move(md25, light, v6, seg(v3, v6), seg(v6, v2), v2), move(md25, light, v3, seg(v4, v3), seg(v3, v6), v6)] ;
+
+Elapsed time (sec): 0.32180100000000067
+L = [park(md25, light, seg(v9, v1), v1), move(md25, light, v9, seg(v2, v9), seg(v9, v1), v1), move(md25, light, v2, seg(v6, v2), seg(v2, v9), v9), pushback(boeing347, medium, v0, seg(v8, v0), seg(v0, v8), v8), move(md25, light, v6, seg(v3, v6), seg(v6, v2), v2), move(md25, light, v3, seg(v4, v3), seg(v3, v6), v6)] ;
+
+Elapsed time (sec): 0.35257300000000047
+L = [park(md25, light, seg(v9, v1), v1), move(md25, light, v9, seg(v2, v9), seg(v9, v1), v1), move(md25, light, v2, seg(v6, v2), seg(v2, v9), v9), pushback(boeing347, medium, v0, seg(v8, v0), seg(v2, v8), v8), move(md25, light, v6, seg(v3, v6), seg(v6, v2), v2), move(md25, light, v3, seg(v4, v3), seg(v3, v6), v6)] ;
+
+Elapsed time (sec): 0.396725
+L = [park(md25, light, seg(v9, v1), v1), move(md25, light, v9, seg(v2, v9), seg(v9, v1), v1), move(md25, light, v2, seg(v6, v2), seg(v2, v9), v9), move(md25, light, v6, seg(v3, v6), seg(v6, v2), v2), pushback(boeing347, medium, v0, seg(v8, v0), seg(v0, v8), v8), move(md25, light, v3, seg(v4, v3), seg(v3, v6), v6)] .
+
+
+
+/* THIRD GOAL */
+
+?- solve_problem(12,L).
+
+Elapsed time (sec): 495.69386199999997
+L = [takeoff(boeing347, seg(v3, v4), v4), move(boeing347, medium, v3, seg(v6, v3), seg(v3, v4), v4), move(boeing347, medium, v6, seg(v2, v6), seg(v6, v3), v3), move(boeing347, medium, v2, seg(v8, v2), seg(v2, v6), v6), move(boeing347, medium, v8, seg(v0, v8), seg(v8, v2), v2), startup(boeing347), park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v0, seg(..., ...), seg(..., ...), v8), move(..., ..., ..., ..., ..., ...)|...] ;
+
+Elapsed time (sec): 495.851593
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), move(boeing347, medium, v2, seg(v8, v2), seg(v2, v7), v7), move(boeing347, medium, v8, seg(v0, v8), seg(v8, v2), v2), startup(boeing347), park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v0, seg(..., ...), seg(..., ...), v8), move(..., ..., ..., ..., ..., ...)|...] ;
+
+Elapsed time (sec): 496.083779
+L = [takeoff(boeing347, seg(v3, v4), v4), move(boeing347, medium, v3, seg(v6, v3), seg(v3, v4), v4), move(boeing347, medium, v6, seg(v2, v6), seg(v6, v3), v3), move(boeing347, medium, v2, seg(v8, v2), seg(v2, v6), v6), startup(boeing347), park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v8, seg(v2, v8), seg(v8, v2), v2), pushback(boeing347, medium, v0, seg(..., ...), seg(..., ...), v8), move(..., ..., ..., ..., ..., ...)|...] ;
+
+Elapsed time (sec): 496.20757599999996
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), move(boeing347, medium, v2, seg(v8, v2), seg(v2, v7), v7), startup(boeing347), park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v8, seg(v2, v8), seg(v8, v2), v2), pushback(boeing347, medium, v0, seg(..., ...), seg(..., ...), v8), move(..., ..., ..., ..., ..., ...)|...] ;
+
+Elapsed time (sec): 496.36632399999996
+L = [takeoff(boeing347, seg(v3, v4), v4), move(boeing347, medium, v3, seg(v6, v3), seg(v3, v4), v4), move(boeing347, medium, v6, seg(v2, v6), seg(v6, v3), v3), move(boeing347, medium, v2, seg(v9, v2), seg(v2, v6), v6), startup(boeing347), park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v8, seg(v2, v8), seg(v9, v2), v2), pushback(boeing347, medium, v0, seg(..., ...), seg(..., ...), v8), move(..., ..., ..., ..., ..., ...)|...] ;
+
+Elapsed time (sec): 496.433384
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), move(boeing347, medium, v2, seg(v9, v2), seg(v2, v7), v7), startup(boeing347), park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v8, seg(v2, v8), seg(v9, v2), v2), pushback(boeing347, medium, v0, seg(..., ...), seg(..., ...), v8), move(..., ..., ..., ..., ..., ...)|...] ;
+
+Elapsed time (sec): 496.61267699999996
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), move(boeing347, medium, v7, seg(v2, v7), seg(v7, v5), v5), startup(boeing347), park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v2, seg(v7, v2), seg(v2, v7), v7), pushback(boeing347, medium, v8, seg(v2, v8), seg(v7, v2), v2), pushback(boeing347, medium, v0, seg(..., ...), seg(..., ...), v8), move(..., ..., ..., ..., ..., ...)|...] ;
+
+Elapsed time (sec): 496.686946
+L = [takeoff(boeing347, seg(v5, v4), v4), move(boeing347, medium, v5, seg(v7, v5), seg(v5, v4), v4), startup(boeing347), park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v7, seg(v5, v7), seg(v7, v5), v5), pushback(boeing347, medium, v2, seg(v7, v2), seg(v5, v7), v7), pushback(boeing347, medium, v8, seg(v2, v8), seg(v7, v2), v2), pushback(boeing347, medium, v0, seg(..., ...), seg(..., ...), v8), move(..., ..., ..., ..., ..., ...)|...] ;
+
+Elapsed time (sec): 496.741561
+L = [takeoff(boeing347, seg(v3, v4), v4), startup(boeing347), park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v5, seg(v4, v5), seg(v3, v4), v4), pushback(boeing347, medium, v7, seg(v5, v7), seg(v4, v5), v5), pushback(boeing347, medium, v2, seg(v7, v2), seg(v5, v7), v7), pushback(boeing347, medium, v8, seg(v2, v8), seg(v7, v2), v2), pushback(boeing347, medium, v0, seg(..., ...), seg(..., ...), v8), move(..., ..., ..., ..., ..., ...)|...] ;
+
+Elapsed time (sec): 496.79051
+L = [takeoff(boeing347, seg(v5, v4), v4), startup(boeing347), park(md25, light, seg(v9, v1), v1), pushback(boeing347, medium, v5, seg(v4, v5), seg(v5, v4), v4), pushback(boeing347, medium, v7, seg(v5, v7), seg(v4, v5), v5), pushback(boeing347, medium, v2, seg(v7, v2), seg(v5, v7), v7), pushback(boeing347, medium, v8, seg(v2, v8), seg(v7, v2), v2), pushback(boeing347, medium, v0, seg(..., ...), seg(..., ...), v8), move(..., ..., ..., ..., ..., ...)|...] .
+
+/* WHY THE DIFFERNCE */
+/* The plane can each take off from a separate section of the airport (v1...vn), and we have
+to take into account they plane weight, type, etc. Because there is no way for the planes to always take off and return, from the exact same area, a difference is to be expected (like in real life). */
